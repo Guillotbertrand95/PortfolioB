@@ -1,0 +1,79 @@
+.skills {
+	max-width: 400px;
+	margin-top: 3rem;
+
+	h3 {
+		margin-bottom: 1rem;
+		color: #333;
+	}
+
+	.skill {
+		margin-bottom: 1.5rem;
+		padding: 0.5rem;
+		border-radius: 8px;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+		&:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		}
+
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0.3rem;
+		}
+
+		&__name {
+			font-weight: 600;
+			color: #444;
+		}
+
+		&__percent {
+			font-size: 0.9rem;
+			color: #999;
+		}
+
+		&__bar {
+			background-color: #eee;
+			height: 12px;
+			border-radius: 6px;
+			overflow: hidden;
+		}
+
+		&__level {
+			height: 100%;
+
+			border-radius: 6px 0 0 6px;
+			transition: width 0.4s ease-in-out;
+		}
+	}
+
+	.skill__level--html {
+		background: linear-gradient(90deg, #e44d26, #f16529); // HTML orange
+	}
+
+	.skill__level--css {
+		background: linear-gradient(90deg, #264de4, #2965f1); // CSS bleu
+	}
+
+	.skill__level--javascript {
+		background: linear-gradient(90deg, #f0db4f, #f7df1e); // JS jaune
+	}
+
+	.skill__level--react {
+		background: linear-gradient(
+			90deg,
+			#61dafb,
+			#21a1f1
+		); // React bleu clair
+	}
+
+	.skill__level--seo {
+		background: linear-gradient(
+			90deg,
+			#0d1a0ec2,
+			#388e3c
+		); // Référencement vert
+	}
+}

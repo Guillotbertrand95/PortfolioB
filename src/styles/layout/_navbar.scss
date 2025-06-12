@@ -1,0 +1,36 @@
+@import "../utils/mixins";
+
+.navbar {
+	background-color: #231f20;
+	padding: 2rem 2rem;
+	border-bottom: 1px solid rgba(230, 213, 197, 0.979);
+}
+
+.navbar__list {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar__item {
+	display: block; // important pour que le lien prenne toute la zone
+}
+
+.navbar__item a {
+	display: block;
+	padding: 0.7rem 6.5rem;
+	text-decoration: none;
+	color: #c6c5b9;
+	transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+	border-radius: 25px;
+	font-size: 20px;
+}
+
+.navbar__item a:hover {
+	background-color: #c6c5b9;
+	color: #6f7772;
+	transform: scale(1.05); /* zoom sans décaler */
+}

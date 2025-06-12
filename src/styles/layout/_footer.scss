@@ -1,0 +1,29 @@
+footer {
+	background-color: #231f20;
+
+	color: #fff;
+	padding: 2rem 1rem;
+	text-align: center;
+	border-top: 1px solid rgba(230, 213, 197, 0.979);
+	flex-shrink: 0; /* pour éviter que le footer ne se rétrécisse */
+
+	.footer-container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	p {
+		margin: 0;
+		font-size: 0.9rem;
+		color: #c6c5b9;
+	}
+
+	a {
+		color: #c6c5b9;
+		text-decoration: underline;
+
+		&:hover {
+			color: yellow;
+		}
+	}
+}

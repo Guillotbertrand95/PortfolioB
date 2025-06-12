@@ -1,0 +1,41 @@
+.home {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	gap: 2rem;
+	padding: 2%;
+}
+
+.home__intro {
+	max-width: 40%;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	color: #333;
+	font-size: 1.1rem;
+
+	padding-right: 2rem;
+	@include fade-in-slide-up(1s, 30px);
+}
+
+.home__image {
+	img {
+		width: 100%;
+		max-width: 250px;
+		border-radius: 50%;
+		object-fit: cover;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		@include hover-zoom(1.1, 0.4s);
+		margin-bottom: 250px;
+	}
+}
+
+.home__skills {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* pour centrer verticalement */
+	border-left: 1px solid rgba(230, 213, 197, 0.979);
+	padding-left: 2rem;
+}
