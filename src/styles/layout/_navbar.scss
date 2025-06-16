@@ -4,12 +4,14 @@
 	background-color: #231f20;
 	padding: 2rem 2rem;
 	border-bottom: 1px solid rgba(230, 213, 197, 0.979);
+	display: flex;
+	justify-content: center; // pour centrer le contenu horizontalement
 }
 
 .navbar__list {
 	list-style: none;
 	display: flex;
-	justify-content: center;
+
 	gap: 100px;
 	margin: 0;
 	padding: 0;
@@ -31,6 +33,5 @@
 
 .navbar__item a:hover {
 	background-color: #c6c5b9;
-	color: #6f7772;
-	transform: scale(1.05); /* zoom sans décaler */
+	color: black;
 }
