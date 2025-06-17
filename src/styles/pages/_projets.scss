@@ -14,17 +14,17 @@
 	gap: 30px;
 }
 .project-card {
-	background-color: #f0deb9;
+	background-color: #f2f4cb;
 	height: 200px;
 	gap: 20px;
 	padding: 2rem;
 	border-radius: 12px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 	transition: transform 0.3s ease;
 
 	&:hover {
 		transform: translateY(-5px);
-		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+		box-shadow: 0 6px 15px rgba(64, 154, 228, 0.7);
 	}
 
 	h3 {
@@ -55,13 +55,13 @@ li {
 .simple-button {
 	display: inline-block;
 	padding: 0.6rem 1.4rem;
-	background: #c9ada1;
+
 	color: #415a77;
 	font-weight: 600;
 	border-radius: 30px;
 	text-decoration: none;
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
-	box-shadow: 0 4px 10px rgba(91, 185, 141, 0.4);
+
 	cursor: pointer;
 }
 
@@ -79,8 +79,8 @@ li {
 		flex: 1 1 70%;
 		min-height: 170px;
 		max-height: 170px;
-		background-color: rgba(240, 236, 213, 0.726);
-		border: 1px solid #dad6d6;
+		background-color: #f9f8dc;
+		border: 1px solid #eaf4f4;
 		padding: 5px;
 		border-radius: 10px;
 		box-sizing: border-box;
