@@ -1,6 +1,5 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import "../styles/components/contactform.scss"; // adapte le chemin si besoin
 
 const ContactForm = () => {
 	const sendEmail = (e) => {

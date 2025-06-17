@@ -1,24 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:wght@281&display=swap");
-
-@import "utils/variables";
-@import "utils/mixins";
+@use "utils/variables";
+@use "utils/mixins" as *;
 
 // Base styles
-@import "base/reset";
-@import "base/global";
+@use "base/reset";
+@use "base/global";
+@use "layout/navbar";
+@use "layout/footer";
+@use "layout/content";
 
-// components
-
-@import "components/skills";
-@import "components/contactform";
-
-// Layout
-@import "layout/header";
-@import "layout/footer";
-@import "layout/content";
-@import "layout/navbar";
+@use "components/skills";
+@use "components/contactform";
 
 // Pages
-@import "pages/home";
-@import "pages/projets";
-@import "pages/contact";
+@use "pages/home";
+@use "pages/projets";
+@use "pages/contact";

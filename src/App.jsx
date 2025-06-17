@@ -1,25 +1,20 @@
-import "./styles/main.scss";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { Suspense, lazy } from "react";
 
 import Layout from "./components/Layout";
-
-// Lazy-loaded pages
-const Home = lazy(() => import("./pages/Home"));
-const Projets = lazy(() => import("./pages/Projets"));
-const Contact = lazy(() => import("./pages/Contact"));
-
+import Home from "./pages/Home";
+import Projets from "./pages/Projets";
+import Contact from "./pages/Contact";
+import "./styles/main.scss";
 function App() {
 	return (
 		<BrowserRouter>
 			<Layout>
-				<Suspense fallback={<div>Chargement…</div>}>
-					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/projets" element={<Projets />} />
-						<Route path="/contact" element={<Contact />} />
-					</Routes>
-				</Suspense>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/projets" element={<Projets />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
 			</Layout>
 		</BrowserRouter>
 	);

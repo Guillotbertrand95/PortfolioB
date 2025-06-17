@@ -1,0 +1,64 @@
+.modal-overlay {
+	position: fixed;
+	inset: 0; // raccourci pour top:0; right:0; bottom:0; left:0;
+	background: rgba(
+		0,
+		0,
+		0,
+		0.6
+	); // un voile plus sombre pour mieux voir la modale
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-content {
+	background: #fff;
+	padding: 2rem 2.5rem;
+	border-radius: 12px;
+	max-width: 500px;
+	width: 90%;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+	position: relative;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #333;
+	animation: slideUp 0.3s ease forwards;
+}
+
+.modal-close {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background: transparent;
+	border: none;
+	font-size: 1.8rem;
+	cursor: pointer;
+	color: #666;
+	transition: color 0.2s ease;
+
+	&:hover {
+		color: #ff4d4d; // rouge doux au hover pour indiquer la fermeture
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		background: rgba(0, 0, 0, 0);
+	}
+	to {
+		background: rgba(0, 0, 0, 0.6);
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

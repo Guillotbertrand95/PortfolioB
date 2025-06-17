@@ -9,7 +9,7 @@ function Footer() {
 					droits réservés.
 				</p>
 				<p>
-					Design by <a href="#">Bertrand</a>
+					Design by <a href="/">Bertrand</a>
 				</p>
 			</div>
 		</footer>
