@@ -47,6 +47,13 @@ const projects = [
 		description: "Site de location d'appartements entre particuliers.",
 		tech: [{ icon: "react", label: "React" }],
 		url: "https://kasa-bertrand.netlify.app/",
+		difficulties: [
+			"Ce projet a été une excellente opportunité pour apprendre à travailler avec React et Vite, deux outils modernes du développement web. J’ai principalement appris à gérer la structure en composants, organiser les pages et styliser avec Sass (SCSS) pour un CSS plus propre et maintenable.",
+
+			"Côté React, j’ai découvert les hooks, notamment useState pour gérer l’état des composants, et la transmission de données via les props. Ces concepts m’ont parfois posé des défis, mais m’ont surtout permis de mieux comprendre comment construire une application interactive et dynamique.",
+
+			"En résumé, KASA m’a aidé à consolider mes bases en React tout en améliorant mes compétences en organisation de code et en gestion du style. Une étape importante dans ma montée en compétence !",
+		],
 	},
 ];
 
