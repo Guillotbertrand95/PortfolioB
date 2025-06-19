@@ -4,9 +4,14 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-
 	gap: 2rem;
 	padding: 2%;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+		padding: 1.5rem 1rem;
+	}
 }
 
 .home__intro {
@@ -16,9 +21,15 @@
 	gap: 80px;
 	color: #333;
 	font-size: 1.1rem;
-
 	padding-right: 2rem;
 	@include fade-in-slide-up(1s, 30px);
+
+	@media (max-width: 768px) {
+		max-width: 100%;
+		padding-right: 0;
+		gap: 2rem;
+		text-align: center;
+	}
 }
 
 .home__image {
@@ -30,6 +41,10 @@
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		@include hover-zoom(1.1, 0.4s);
 		margin-bottom: 250px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 2rem;
+		}
 	}
 }
 
@@ -37,7 +52,17 @@
 	flex: 1;
 	display: flex;
 	flex-direction: column;
-	justify-content: center; /* pour centrer verticalement */
+	justify-content: center;
 	border-left: 1px solid rgba(230, 213, 197, 0.979);
 	padding-left: 2rem;
+
+	@media (max-width: 768px) {
+		border-left: none;
+		border-top: 1px solid rgba(230, 213, 197, 0.5);
+		padding-left: 0;
+		padding-top: 2rem;
+		width: 100%;
+		align-items: center;
+		text-align: center;
+	}
 }

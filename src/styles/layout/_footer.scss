@@ -5,11 +5,21 @@ footer {
 	padding: 2rem 1rem;
 	text-align: center;
 	border-top: 1px solid rgba(230, 213, 197, 0.979);
-	flex-shrink: 0; /* pour éviter que le footer ne se rétrécisse */
+	flex-shrink: 0;
 
 	.footer-container {
 		max-width: 1200px;
 		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+			justify-content: space-between;
+			text-align: left;
+		}
 	}
 
 	p {

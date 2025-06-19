@@ -98,3 +98,48 @@ li {
 	font-size: 0.95rem;
 	white-space: nowrap;
 }
+@media (max-width: 768px) {
+	.projects {
+		padding: 2rem 1rem;
+
+		h2 {
+			font-size: 1.5rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.projects__grid {
+		grid-template-columns: 1fr; // une seule colonne sur mobile
+		gap: 20px;
+	}
+
+	.project-card {
+		height: auto;
+		padding: 1.5rem;
+
+		h3 {
+			font-size: 1.1rem;
+		}
+
+		p {
+			font-size: 0.9rem;
+		}
+	}
+
+	.project-container {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.card.info {
+		width: 100%;
+		max-height: none;
+		min-height: auto;
+	}
+
+	.web-link {
+		margin-left: 0;
+		align-self: flex-end;
+	}
+}
