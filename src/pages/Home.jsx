@@ -10,7 +10,7 @@ function Home() {
 			</div>
 			<div className="home__intro">
 				<div className="homeTitle">
-					<h2>Guillot bertrand</h2>
+					<h2>GUILLOT BERTRAND</h2>
 				</div>
 				<p>
 					Bonjour, je m’appelle Bertrand et je suis actuellement en
