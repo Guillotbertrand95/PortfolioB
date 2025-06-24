@@ -2,7 +2,7 @@ footer {
 	background-color: #231f20;
 	min-height: 100px;
 	color: #fff;
-	padding: 2rem 1rem;
+	padding: 3rem 1rem;
 	text-align: center;
 	border-top: 1px solid rgba(230, 213, 197, 0.979);
 	flex-shrink: 0;
@@ -29,6 +29,7 @@ footer {
 	}
 
 	a {
+		padding: 10px;
 		color: #c6c5b9;
 		text-decoration: underline;
 
