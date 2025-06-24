@@ -5,7 +5,7 @@
 	padding: 2rem 2rem;
 	border-bottom: 1px solid rgba(230, 213, 197, 0.979);
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	border-bottom-left-radius: 90% 60%;
 
 	// Responsive: empile verticalement le menu sur mobile
@@ -19,7 +19,7 @@
 .navbar__list {
 	list-style: none;
 	display: flex;
-	gap: 100px;
+	gap: 50px;
 	margin: 0;
 	padding: 0;
 
