@@ -1,6 +1,6 @@
 import React from "react";
 import Skills from "../components/Skills.jsx";
-import photo from "../assets/images/photo.webp";
+import photo from "../assets/images/photo-profil.webp";
 
 function Home() {
 	return (
