@@ -1,7 +1,8 @@
 footer {
-	background-color: #231f20;
+	background-color: #c1e0f7;
+
 	min-height: 100px;
-	color: #fff;
+	color: black;
 	padding: 3rem 1rem;
 	text-align: center;
 	border-top: 1px solid rgba(230, 213, 197, 0.979);
@@ -25,12 +26,12 @@ footer {
 	p {
 		margin: 0;
 		font-size: 0.9rem;
-		color: #c6c5b9;
+		color: black;
 	}
 
 	a {
 		padding: 10px;
-		color: #c6c5b9;
+		color: black;
 		text-decoration: underline;
 
 		&:hover {

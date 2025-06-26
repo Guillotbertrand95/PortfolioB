@@ -1,7 +1,7 @@
 @import "../utils/mixins";
 
 .navbar {
-	background-color: #231f20;
+	background-color: #c1e0f7;
 	padding: 2rem 2rem;
 	border-bottom: 1px solid rgba(230, 213, 197, 0.979);
 	display: flex;
@@ -38,7 +38,7 @@
 	display: block;
 	padding: 0.7rem 6.5rem;
 	text-decoration: none;
-	color: #c6c5b9;
+	color: black;
 	transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 	border-radius: 25px;
 	font-size: 20px;
@@ -52,6 +52,6 @@
 }
 
 .navbar__item a:hover {
-	background-color: #c6c5b9;
-	color: black;
+	background-color: #54414e;
+	color: white;
 }
