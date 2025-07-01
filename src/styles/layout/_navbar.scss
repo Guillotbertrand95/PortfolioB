@@ -2,12 +2,14 @@
 
 .navbar {
 	background-color: #c1e0f7;
-	padding: 2rem 2rem;
-	border-bottom: 1px solid rgba(230, 213, 197, 0.979);
-	display: flex;
 	justify-content: flex-end;
-	border-bottom-left-radius: 90% 60%;
-
+	min-height: 100px;
+	color: black;
+	padding: 3rem 1rem;
+	text-align: center;
+	border-top: 1px solid rgba(230, 213, 197, 0.979);
+	flex-shrink: 0;
+	border-bottom-left-radius: 60% 90%;
 	// Responsive: empile verticalement le menu sur mobile
 	@media (max-width: 768px) {
 		flex-direction: column;
@@ -19,7 +21,7 @@
 .navbar__list {
 	list-style: none;
 	display: flex;
-	gap: 50px;
+	gap: 100px;
 	margin: 0;
 	padding: 0;
 
@@ -52,6 +54,7 @@
 }
 
 .navbar__item a:hover {
-	background-color: #54414e;
-	color: white;
+	background-color: #f9f8dc;
+	color: black;
+	box-shadow: 0 10px 15px rgba(64, 154, 228, 0.7);
 }
